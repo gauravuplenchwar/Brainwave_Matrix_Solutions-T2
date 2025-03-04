@@ -23,7 +23,7 @@ if __name__ == "__main__":
     
     feedback1 = Feedback("Alice", "Great service!", 8)
     feedback2 = Feedback("Bob", "Could be better.", 7)
-    feedback3 = Feedback("Gogo", "dashing star", 9)
+    feedback3 = Feedback("Gogo", "dashing star.", 9)
     
     feedback_manager.add_feedback(feedback1)
     feedback_manager.add_feedback(feedback2)
