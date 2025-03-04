@@ -1,0 +1,32 @@
+# Customer Feedback Project
+
+class Feedback:
+    def __init__(self, customer_name, feedback_text, rating):
+        self.customer_name = customer_name
+        self.feedback_text = feedback_text
+        self.rating = rating
+
+class FeedbackManager:
+    def __init__(self):
+        self.feedback_list = []
+
+    def add_feedback(self, feedback):
+        self.feedback_list.append(feedback)
+
+    def display_feedback(self):
+        for feedback in self.feedback_list:
+            print(f"Customer: {feedback.customer_name}, Rating: {feedback.rating}, Feedback: {feedback.feedback_text}")
+
+# Example usage
+if __name__ == "__main__":
+    feedback_manager = FeedbackManager()
+    
+    feedback1 = Feedback("Alice", "Great service!", 8)
+    feedback2 = Feedback("Bob", "Could be better.", 7)
+    feedback3 = Feedback("Gogo", "dashing star", 9)
+    
+    feedback_manager.add_feedback(feedback1)
+    feedback_manager.add_feedback(feedback2)
+    feedback_manager.add_feedback(feedback3)
+    
+    feedback_manager.display_feedback()
